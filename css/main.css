@@ -1,6 +1,15 @@
-.img-responsive.logo {
+.link-logo {
+  display: inline-block;
+}
+.img-responsive.img-logo {
   max-width: 300px;
 }
+
+.col-info {
+  text-align: center;
+}
+.col-win {}
+.col-vote {}
 
 /**
 *** Breakpoints are based on minimum viewport widths and allow us to scale up elements as the viewport changes.
