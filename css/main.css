@@ -1,3 +1,7 @@
+.img-responsive.logo {
+  max-width: 300px;
+}
+
 /**
 *** Breakpoints are based on minimum viewport widths and allow us to scale up elements as the viewport changes.
 **/
