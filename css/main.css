@@ -5,6 +5,12 @@
   max-width: 300px;
 }
 
+.gleam-max-width {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
 .col-intro,
 .col-info {
   text-align: center;
