@@ -16,7 +16,10 @@
   text-align: center;
 }
 .col-win {}
-.col-vote {}
+
+.nowrap {
+  white-space: nowrap;
+}
 
 /**
 *** Breakpoints are based on minimum viewport widths and allow us to scale up elements as the viewport changes.
