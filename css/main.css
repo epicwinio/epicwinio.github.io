@@ -61,6 +61,9 @@
   }
 }
 @media (min-width: 768px) { 
+  #video-background {
+    min-width: 125%;
+  }
   #text-tagline {
     font-size: 45px;
   }
