@@ -60,7 +60,7 @@
   font-size: 36px;
   padding-top: 0.1em;
 }
-@media (min-width: 600px) { 
+@media (min-width: 622px) { 
   #text-tagline {
     top: 255px;
      line-height: 1.5;
