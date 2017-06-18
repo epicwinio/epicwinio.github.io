@@ -34,7 +34,7 @@
   margin-left: -100px;
 }
 #video-background {
-  min-width: 100%;
+  min-width: 200%;
   min-height: 100%;
   width: auto;
   height: auto;
@@ -55,13 +55,21 @@
 /**
 *** Breakpoints are based on minimum viewport widths and allow us to scale up elements as the viewport changes.
 **/
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+  #video-background {
+    min-width: 150%;
+  }
+}
 @media (min-width: 768px) { 
   #text-tagline {
     font-size: 45px;
   }
 }
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+  #video-background {
+    min-width: 100%;
+  }
+}
 @media (min-width: 1200px) {  }
 
 /**
