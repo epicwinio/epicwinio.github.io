@@ -47,8 +47,8 @@
 #text-tagline {
   margin: 0 auto;
   position: absolute;
-  top: 255px;
-  line-height: 1.5;
+  top: 235px;
+  line-height: 1.4;
   text-align: center;
   width: 100%;
   text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
@@ -57,8 +57,16 @@
   font-weight: 700;
   font-family:'Bitter';
   letter-spacing: 1px;
-  font-size: 35px;
+  font-size: 36px;
+  padding-top: 0.1em;
 }
+@media (min-width: 600px) { 
+  #text-tagline {
+    top: 255px;
+     line-height: 1.5;
+  }
+}
+
 
 /**
 *** Breakpoints are based on minimum viewport widths and allow us to scale up elements as the viewport changes.
