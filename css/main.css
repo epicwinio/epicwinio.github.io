@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+
 .link-logo {
   display: inline-block;
 }
@@ -42,9 +44,6 @@
   max-width: 100%;
   background-color: #000;
 }
-
-@import url(http://fonts.googleapis.com/css?family=Bitter:700);
-
   
 #text-tagline {
   margin: 0 auto;
