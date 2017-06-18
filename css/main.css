@@ -15,17 +15,39 @@
 .col-info {
   text-align: center;
 }
-.col-win {}
+.col-intro {
+  position: relative;
+  padding: 0;
+  height: 350px;
+  overflow: hidden;
+  background-color: #000;
+}
 
 .nowrap {
   white-space: nowrap;
 }
-
+#img-logo {
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -100px;
+}
 #video-background {
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
-  width: auto; 
+  width: auto;
   height: auto;
+  max-width: 100%;
+}
+#text-tagline {
+  margin: 0 auto;
+  position: absolute;
+  top: 260px;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+  color: #fff;
 }
 
 /**
