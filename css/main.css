@@ -74,6 +74,7 @@
 @media (min-width: 992px) { 
   #video-background {
     min-width: 100%;
+    margin-left: 0;
   }
 }
 @media (min-width: 1200px) {  }
