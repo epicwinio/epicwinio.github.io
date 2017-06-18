@@ -21,6 +21,13 @@
   white-space: nowrap;
 }
 
+#video-background {
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+}
+
 /**
 *** Breakpoints are based on minimum viewport widths and allow us to scale up elements as the viewport changes.
 **/
