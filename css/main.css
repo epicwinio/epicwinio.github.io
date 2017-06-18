@@ -57,6 +57,7 @@
   font-weight: 700;
   font-family:'Bitter';
   letter-spacing: 1px;
+  font-size: 35px;
 }
 
 /**
@@ -74,13 +75,16 @@
     margin-left: -12.5%;
   }
   #text-tagline {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 @media (min-width: 992px) { 
   #video-background {
     min-width: 100%;
     margin-left: 0;
+  }
+  #text-tagline {
+    font-size: 45px;
   }
 }
 @media (min-width: 1200px) {  }
