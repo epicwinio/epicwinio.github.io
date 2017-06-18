@@ -36,7 +36,7 @@
 }
 #video-background {
   min-width: 200%;
-  margin-left: -100%;
+  margin-left: -50%;
   min-height: 100%;
   width: auto;
   height: auto;
@@ -46,7 +46,7 @@
 @media (max-width: 420px) { 
   #video-background {
     min-width: 300%;
-    margin-left: -150%;
+    margin-left: -75%;
   }
 }
   
