@@ -12,8 +12,7 @@
   margin: 0 auto;
 }
 
-.col-intro,
-.col-info {
+.col-win {
   text-align: center;
 }
 .col-intro {
@@ -22,6 +21,7 @@
   height: 350px;
   overflow: hidden;
   background-color: #000;
+  text-align: center;
 }
 
 .nowrap {
@@ -43,13 +43,13 @@
   max-width: 100%;
   background-color: #000;
 }
-@media (max-width: 420px) { 
+@media (max-width: 420px) {
   #video-background {
     min-width: 300%;
     margin-left: -125%;
   }
 }
-  
+
 #text-tagline {
   margin: 0 auto;
   position: absolute;
@@ -66,7 +66,7 @@
   font-size: 36px;
   padding-top: 0.1em;
 }
-@media (min-width: 622px) { 
+@media (min-width: 622px) {
   #img-logo {
     top: 30px;
   }
@@ -80,13 +80,13 @@
 /**
 *** Breakpoints are based on minimum viewport widths and allow us to scale up elements as the viewport changes.
 **/
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   #video-background {
     min-width: 150%;
     margin-left: -25%;
   }
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   #video-background {
     min-width: 125%;
     margin-left: -12.5%;
@@ -95,7 +95,7 @@
     font-size: 40px;
   }
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   #video-background {
     min-width: 100%;
     margin-left: 0;
