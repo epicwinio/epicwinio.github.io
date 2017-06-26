@@ -44,7 +44,7 @@
   float: left;
   padding-right: 10px;
 }
-.show-navbar .col-navbar {
+.show-navbar #img-navbar-logo {
   display: block;
 }
 #text-brand {
