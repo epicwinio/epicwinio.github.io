@@ -23,6 +23,27 @@
   background-color: #000;
   text-align: center;
 }
+.col-navbar {
+  height: 70px;
+  line-height: 70px;
+  padding: 0px;
+  background-color: #010002;
+}
+#img-navbar-logo {
+  height:60px;
+  width: auto;
+}
+#text-brand {
+  line-height: 70px;
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  color: #fff;
+  opacity: 1;
+  font-weight: 700;
+  font-family:'Bitter';
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+
 
 .nowrap {
   white-space: nowrap;
