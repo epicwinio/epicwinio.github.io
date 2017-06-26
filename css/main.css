@@ -27,15 +27,27 @@
   height: 70px;
   line-height: 70px;
   padding: 10px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.show-navbar .col-navbar {
   background-color: #010002;
 }
+
 #img-navbar-logo {
+  display: none;
   height:50px;
   width: auto;
   float: left;
   padding-right: 10px;
 }
+.show-navbar .col-navbar {
+  display: block;
+}
 #text-brand {
+  display: none;
   line-height: 50px;
   text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
   color: #eee;
@@ -47,6 +59,9 @@
   margin: 0;
   font-size: 36px;
   display: inline-block;
+}
+.show-navbar #text-brand {
+  display: block;
 }
 #navbar-nav {
   display: inline-block;
