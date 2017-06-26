@@ -38,8 +38,8 @@
 #text-brand {
   line-height: 50px;
   text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
-  color: #fff;
-  opacity: 1;
+  color: #eee;
+  opacity: 0.9;
   font-weight: 700;
   font-family:'Bitter';
   letter-spacing: 1px;
@@ -52,6 +52,10 @@
   display: inline-block;
   float: right;
   line-height: 50px;
+  background-color: #010002;
+  margin: -11px -10px 0 0;
+  padding: 10px;
+  border-radius: 0 0 0 10px;
 }
 #img-navbar-menu {
   height:50px;
