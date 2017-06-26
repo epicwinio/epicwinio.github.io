@@ -26,24 +26,36 @@
 .col-navbar {
   height: 70px;
   line-height: 70px;
-  padding: 0px;
+  padding: 10px;
   background-color: #010002;
 }
 #img-navbar-logo {
   height:60px;
   width: auto;
+  float: left;
+  padding-right: 10px;
 }
 #text-brand {
-  line-height: 70px;
+  line-height: 50px;
   text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
   color: #fff;
   opacity: 1;
   font-weight: 700;
   font-family:'Bitter';
   letter-spacing: 1px;
-  font-size: 50px;
+  font-size: 36px;
+  margin: 0;
+  font-size: 36px;
+  display: inline-block;
 }
-
+#navbar-nav {
+  dsiplay: inline-block;
+  float: right;
+}
+#img-navbar-menu {
+  height:50px;
+  width: auto;
+}
 
 .nowrap {
   white-space: nowrap;
