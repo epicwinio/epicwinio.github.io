@@ -1,30 +1,37 @@
 ---
 layout: default
 ---
-<div id="{{ page.slug }}" class="col-md-offset-3 col-md-6 col-win">
-  <div class="gleam-max-width product-details">
-    <h1>
-      <a href="{{ page.product_url_home }}" class="link-logo"><img
-        src="/img/{{ page.slug }}.png" class="img-responsive img-logo" alt="{{ page.product_name | escape }}"></a>
-    </h1>
-    <h2>{{ page.product_header | escape }}</h2>
-    <p>{{ page.product_description| escape }}</p>
-    <p>
-      {% if page.product_url_home %}
-      <a href="{{ page.product_url_home }}" class="btn btn-default">Website</a>
-      {% endif %}
-      {% if page.product_url_pricing %}
-      <a href="{{ page.product_url_pricing }}" class="btn btn-default">Pricing</a>
-      {% endif %}
-      {% if page.product_url_freetrial %}
-      <a href="{{ page.product_url_freetrial }}" class="btn btn-default">Free Trial</a>
-      {% endif %}
-    </p>
+<div class="product-details">
+  <h1>
+    <a href="{{ page.product_url_home }}" class="link-logo"><img
+      src="/img/{{ page.slug }}.png" class="img-responsive img-logo" alt="{{ page.product_name | escape }}"></a>
+  </h1>
+  <h2>{{ page.product_header | escape }}</h2>
+  <p>{{ page.product_description| escape }}</p>
+  <p class="btn-group">
+    {% if page.product_url_home %}
+    <a href="{{ page.product_url_home }}" class="btn btn-default">Website</a>
+    {% endif %}
+    {% if page.product_url_pricing %}
+    <a href="{{ page.product_url_pricing }}" class="btn btn-default">Pricing</a>
+    {% endif %}
+    {% if page.product_url_freetrial %}
+    <a href="{{ page.product_url_freetrial }}" class="btn btn-default">Free Trial</a>
+    {% endif %}
+  </p>
+  <div class="coupon">
+    {% if page.gleam_coupon_url %}
+      <a class="coupon-link" href="page.gleam_coupon_url" target="_blank">Shopify 25% Off Coupon</a>
+    <!-- <p><a class="e-widget no-button" href="{{ page.gleam_coupon_url }}" rel="nofollow">{{ page.gleam_coupon_text | escape }}</a></p> -->
+    {% endif %}
   </div>
-  {% if page.gleam_coupon_url %}
-  <p><a class="e-widget no-button" href="{{ page.gleam_coupon_url }}" rel="nofollow">{{ page.gleam_coupon_text | escape }}</a></p>
-  {% endif %}
-  {% if page.gleam_competition_url %}
-  <p><a class="e-widget no-button" href="{{ page.gleam_competition_url }}" rel="nofollow">{{ page.gleam_competition_text | escape }}</a></p>
-  {% endif %}
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6 col-win">
+      {% if page.gleam_competition_url %}
+      <p><a class="e-widget no-button" href="{{ page.gleam_competition_url }}" rel="nofollow">{{ page.gleam_competition_text | escape }}</a></p>
+      {% endif %}
+    </div>
+  </div>
 </div>

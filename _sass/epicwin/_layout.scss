@@ -1,3 +1,11 @@
+html, body {
+  background: #f6f6f6;
+}
+
+p {
+  line-height: 1.6;
+}
+
 .link-logo {
   display: inline-block;
 }
@@ -87,6 +95,7 @@
   box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 3px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
   color: #007aff;
+  background: #fff;
 }
 .menu-link:hover {
   box-shadow: 0 0 2px #007aff, 0 3px 0 #007aff;
@@ -100,8 +109,37 @@
 }
 .product-details {
   padding-bottom: 20px;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0,0,0,0.4);
+  margin: 20px auto;
+  padding: 20px 10px;
+  text-align: center;
 }
-
+.product-details h1 {
+  margin-top: 0;
+}
+// html body .coupon iframe.e-embed-frame {
+//   box-shadow: none;
+//   border: 2px dashed #ccc;
+//   border-radius: 10px;
+// }
+.coupon {
+  .coupon-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007aff;
+    padding: 10px 30px;
+    border: 2px dashed #999;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+     &:hover {
+       color: #007aff;
+       border: 2px dashed #007aff;
+     }
+  }
+}
 .nowrap {
   white-space: nowrap;
 }
