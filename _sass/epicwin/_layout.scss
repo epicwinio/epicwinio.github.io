@@ -25,12 +25,13 @@
 .col-navbar {
   height: 70px;
   line-height: 70px;
-  padding: 10px;
   background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99999;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .show-navbar .col-navbar {
   background-color: #010002;
@@ -38,7 +39,7 @@
 
 #img-navbar-logo {
   display: none;
-  height:50px;
+  height:70px;
   width: auto;
   float: left;
   padding-right: 10px;
@@ -48,16 +49,18 @@
 }
 #text-brand {
   display: none;
-  line-height: 50px;
+  line-height: 70px;
   text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
   color: #fff;
-  opacity: 0.9;
   font-weight: 700;
   font-family:'Bitter';
   letter-spacing: 1px;
   font-size: 36px;
   margin: 0;
   font-size: 36px;
+}
+#text-brand:hover {
+  color: #eee;
 }
 .show-navbar #text-brand {
   display: inline-block;
@@ -67,11 +70,11 @@
   float: right;
   line-height: 50px;
   background-color: #010002;
-  margin: -11px -10px 0 0;
-  padding: 10px;
+  padding: 0;
   border-radius: 0 0 0 10px;
 }
 #img-navbar-menu {
+  margin: 10px;
   height:50px;
   width: auto;
 }
