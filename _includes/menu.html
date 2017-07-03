@@ -1,0 +1,7 @@
+  <ul id="menu">
+    {% for post in site.posts %}
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.product_name | escape }}</a>
+      </li>
+    {% endfor %}
+  </ul>

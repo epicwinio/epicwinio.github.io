@@ -1,0 +1,420 @@
+.link-logo {
+  display: inline-block;
+}
+.img-responsive.img-logo {
+  max-width: 300px;
+}
+
+.gleam-max-width {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.col-win {
+  text-align: center;
+}
+.col-intro {
+  position: relative;
+  padding: 0;
+  height: 350px;
+  overflow: hidden;
+  background-color: #000;
+  text-align: center;
+}
+.col-navbar {
+  height: 70px;
+  line-height: 70px;
+  padding: 10px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+.show-navbar .col-navbar {
+  background-color: #010002;
+}
+
+#img-navbar-logo {
+  display: none;
+  height:50px;
+  width: auto;
+  float: left;
+  padding-right: 10px;
+}
+.show-navbar #img-navbar-logo {
+  display: block;
+}
+#text-brand {
+  display: none;
+  line-height: 50px;
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  color: #fff;
+  opacity: 0.9;
+  font-weight: 700;
+  font-family:'Bitter';
+  letter-spacing: 1px;
+  font-size: 36px;
+  margin: 0;
+  font-size: 36px;
+}
+.show-navbar #text-brand {
+  display: inline-block;
+}
+#navbar-nav {
+  display: inline-block;
+  float: right;
+  line-height: 50px;
+  background-color: #010002;
+  margin: -11px -10px 0 0;
+  padding: 10px;
+  border-radius: 0 0 0 10px;
+}
+#img-navbar-menu {
+  height:50px;
+  width: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+#img-logo {
+  margin: 0 auto;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+}
+#video-background {
+  min-width: 200%;
+  margin-left: -50%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  background-color: #000;
+}
+@media (max-width: 420px) {
+  #video-background {
+    min-width: 300%;
+    margin-left: -125%;
+  }
+}
+
+#text-tagline {
+  margin: 0 auto;
+  position: absolute;
+  top: 230px;
+  line-height: 1.4;
+  text-align: center;
+  width: 100%;
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  color: #eee;
+  opacity: 0.9;
+  font-weight: 700;
+  font-family:'Bitter';
+  letter-spacing: 1px;
+  font-size: 36px;
+  padding-top: 0.1em;
+}
+@media (min-width: 622px) {
+  #img-logo {
+    top: 30px;
+  }
+  #text-tagline {
+    top: 255px;
+     line-height: 1.5;
+  }
+}
+
+
+/**
+*** Breakpoints are based on minimum viewport widths and allow us to scale up elements as the viewport changes.
+**/
+@media (min-width: 576px) {
+  #video-background {
+    min-width: 150%;
+    margin-left: -25%;
+  }
+}
+@media (min-width: 768px) {
+  #video-background {
+    min-width: 125%;
+    margin-left: -12.5%;
+  }
+  #text-tagline {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  #video-background {
+    min-width: 100%;
+    margin-left: 0;
+  }
+  #text-tagline {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1200px) {  }
+
+/**
+*** Targeting a single segment of screen sizes using the minimum and maximum breakpoint widths.
+**/
+@media (max-width: 575px) {  }
+@media (min-width: 576px) and (max-width: 767px) {  }
+@media (min-width: 768px) and (max-width: 991px) {  }
+@media (min-width: 992px) and (max-width: 1199px) {  }
+@media (min-width: 1200px) {  }
+
+
+// /**
+//  * Site header
+//  */
+// .site-header {
+//   border-top: 5px solid $grey-color-dark;
+//   border-bottom: 1px solid $grey-color-light;
+//   min-height: $spacing-unit * 1.865;
+//
+//   // Positioning context for the mobile navigation icon
+//   position: relative;
+// }
+//
+// .site-title {
+//   @include relative-font-size(1.625);
+//   font-weight: 300;
+//   line-height: $base-line-height * $base-font-size * 2.25;
+//   letter-spacing: -1px;
+//   margin-bottom: 0;
+//   float: left;
+//
+//   &,
+//   &:visited {
+//     color: $grey-color-dark;
+//   }
+// }
+//
+// .site-nav {
+//   float: right;
+//   line-height: $base-line-height * $base-font-size * 2.25;
+//
+//   .nav-trigger {
+//       display: none;
+//   }
+//
+//   .menu-icon {
+//     display: none;
+//   }
+//
+//   .page-link {
+//     color: $text-color;
+//     line-height: $base-line-height;
+//
+//     // Gaps between nav items, but not on the last one
+//     &:not(:last-child) {
+//       margin-right: 20px;
+//     }
+//   }
+//
+//   @include media-query($on-palm) {
+//     position: absolute;
+//     top: 9px;
+//     right: $spacing-unit / 2;
+//     background-color: $background-color;
+//     border: 1px solid $grey-color-light;
+//     border-radius: 5px;
+//     text-align: right;
+//
+//     label[for="nav-trigger"] {
+//       display: block;
+//       float: right;
+//       width: 36px;
+//       height: 36px;
+//       z-index: 2;
+//       cursor: pointer;
+//     }
+//
+//     .menu-icon {
+//       display: block;
+//       float: right;
+//       width: 36px;
+//       height: 26px;
+//       line-height: 0;
+//       padding-top: 10px;
+//       text-align: center;
+//
+//       > svg path {
+//         fill: $grey-color-dark;
+//       }
+//     }
+//
+//     input ~ .trigger {
+//       clear: both;
+//       display: none;
+//     }
+//
+//     input:checked ~ .trigger {
+//       display: block;
+//       padding-bottom: 5px;
+//     }
+//
+//     .page-link {
+//       display: block;
+//       padding: 5px 10px;
+//
+//       &:not(:last-child) {
+//         margin-right: 0;
+//       }
+//       margin-left: 20px;
+//     }
+//   }
+// }
+//
+//
+//
+// /**
+//  * Site footer
+//  */
+// .site-footer {
+//   border-top: 1px solid $grey-color-light;
+//   padding: $spacing-unit 0;
+// }
+//
+// .footer-heading {
+//   @include relative-font-size(1.125);
+//   margin-bottom: $spacing-unit / 2;
+// }
+//
+// .contact-list,
+// .social-media-list {
+//   list-style: none;
+//   margin-left: 0;
+// }
+//
+// .footer-col-wrapper {
+//   @include relative-font-size(0.9375);
+//   color: $grey-color;
+//   margin-left: -$spacing-unit / 2;
+//   @extend %clearfix;
+// }
+//
+// .footer-col {
+//   float: left;
+//   margin-bottom: $spacing-unit / 2;
+//   padding-left: $spacing-unit / 2;
+// }
+//
+// .footer-col-1 {
+//   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+//   width:         calc(35% - (#{$spacing-unit} / 2));
+// }
+//
+// .footer-col-2 {
+//   width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+//   width:         calc(20% - (#{$spacing-unit} / 2));
+// }
+//
+// .footer-col-3 {
+//   width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+//   width:         calc(45% - (#{$spacing-unit} / 2));
+// }
+//
+// @include media-query($on-laptop) {
+//   .footer-col-1,
+//   .footer-col-2 {
+//     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+//     width:         calc(50% - (#{$spacing-unit} / 2));
+//   }
+//
+//   .footer-col-3 {
+//     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+//     width:         calc(100% - (#{$spacing-unit} / 2));
+//   }
+// }
+//
+// @include media-query($on-palm) {
+//   .footer-col {
+//     float: none;
+//     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+//     width:         calc(100% - (#{$spacing-unit} / 2));
+//   }
+// }
+//
+//
+//
+// /**
+//  * Page content
+//  */
+// .page-content {
+//   padding: $spacing-unit 0;
+// }
+//
+// .page-heading {
+//   @include relative-font-size(1.25);
+// }
+//
+// .post-list {
+//   margin-left: 0;
+//   list-style: none;
+//
+//   > li {
+//     margin-bottom: $spacing-unit;
+//   }
+// }
+//
+// .post-meta {
+//   font-size: $small-font-size;
+//   color: $grey-color;
+// }
+//
+// .post-link {
+//   display: block;
+//   @include relative-font-size(1.5);
+// }
+//
+//
+//
+// /**
+//  * Posts
+//  */
+// .post-header {
+//   margin-bottom: $spacing-unit;
+// }
+//
+// .post-title {
+//   @include relative-font-size(2.625);
+//   letter-spacing: -1px;
+//   line-height: 1;
+//
+//   @include media-query($on-laptop) {
+//     @include relative-font-size(2.25);
+//   }
+// }
+//
+// .post-content {
+//   margin-bottom: $spacing-unit;
+//
+//   h2 {
+//     @include relative-font-size(2);
+//
+//     @include media-query($on-laptop) {
+//       @include relative-font-size(1.75);
+//     }
+//   }
+//
+//   h3 {
+//     @include relative-font-size(1.625);
+//
+//     @include media-query($on-laptop) {
+//       @include relative-font-size(1.375);
+//     }
+//   }
+//
+//   h4 {
+//     @include relative-font-size(1.25);
+//
+//     @include media-query($on-laptop) {
+//       @include relative-font-size(1.125);
+//     }
+//   }
+// }
