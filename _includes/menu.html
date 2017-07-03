@@ -1,7 +1,9 @@
-  <ul id="menu">
+<div id="{{ page.slug }}" class="col-md-offset-3 col-md-6 col-win">
+  <div id="menu" class="gleam-max-width">
     {% for post in site.posts %}
-      <li>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.product_name | escape }}</a>
-      </li>
+      <a class="menu-link" href="{{ post.url | relative_url }}">
+        <img
+        src="/img/{{ post.slug }}.png" class="img-responsive img-menu-logo" alt="{{ post.product_name | escape }}"><br />{{ post.product_header | escape }}</a>
     {% endfor %}
-  </ul>
+  </div>
+</div>

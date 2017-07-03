@@ -78,6 +78,29 @@
   height:50px;
   width: auto;
 }
+.menu-link {
+  display: block;
+  margin: 20px 0;
+  padding: 20px 10px;
+  min-height: 145px;
+  text-align: center;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 3px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  color: #007aff;
+}
+.menu-link:hover {
+  box-shadow: 0 0 2px #007aff, 0 3px 0 #007aff;
+  color: #007aff;
+}
+.img-responsive.img-menu-logo {
+  display: inline-block;
+  max-width: 300px;
+  max-height: 70px;
+  margin-bottom: 15px;
+}
+.product-details {
+  padding-bottom: 20px;
+}
 
 .nowrap {
   white-space: nowrap;

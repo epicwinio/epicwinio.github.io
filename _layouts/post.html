@@ -2,13 +2,13 @@
 layout: default
 ---
 <div id="{{ page.slug }}" class="col-md-offset-3 col-md-6 col-win">
-  <div class="gleam-max-width">
+  <div class="gleam-max-width product-details">
     <h1>
       <a href="{{ page.product_url_home }}" class="link-logo"><img
-        src="/img/{{ page.slug }}.png" class="img-responsive img-logo" alt="{{ page.product_name }}"></a>
+        src="/img/{{ page.slug }}.png" class="img-responsive img-logo" alt="{{ page.product_name | escape }}"></a>
     </h1>
-    <h2>{{ page.product_header }}</h2>
-    <p>{{ page.product_description }}</p>
+    <h2>{{ page.product_header | escape }}</h2>
+    <p>{{ page.product_description| escape }}</p>
     <p>
       {% if page.product_url_home %}
       <a href="{{ page.product_url_home }}" class="btn btn-default">Website</a>
