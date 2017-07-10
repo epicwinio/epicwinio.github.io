@@ -7,7 +7,7 @@ layout: default
       src="/img/{{ page.slug }}.png" class="img-responsive img-logo" alt="{{ page.product_name | escape }}"></a>
   </h1>
   <h2>{{ page.product_header | escape }}</h2>
-  <p>{{ page.product_description| escape }}</p>
+  <p>{{ page.product_description | escape }}</p>
   <p class="btn-group">
     {% if page.product_url_home %}
     <a href="{{ page.product_url_home }}" class="btn btn-default">Website</a>
@@ -19,12 +19,12 @@ layout: default
     <a href="{{ page.product_url_freetrial }}" class="btn btn-default">Free Trial</a>
     {% endif %}
   </p>
+  {% if page.gleam_coupon_url != empty %}
   <div class="coupon">
-    {% if page.gleam_coupon_url %}
-      <a class="coupon-link" href="page.gleam_coupon_url" target="_blank">Shopify 25% Off Coupon</a>
+    <a class="coupon-link" href="page.gleam_coupon_url" target="_blank">{{ page.gleam_coupon_text | escape }}</a>
     <!-- <p><a class="e-widget no-button" href="{{ page.gleam_coupon_url }}" rel="nofollow">{{ page.gleam_coupon_text | escape }}</a></p> -->
-    {% endif %}
   </div>
+  {% endif %}
 </div>
 <div class="container">
   <div class="row">
