@@ -78,8 +78,8 @@ p {
   float: right;
   line-height: 50px;
   background-color: #010002;
-  padding: 0;
-  border-radius: 200px;
+  padding: 5px;
+  border-radius: 5px;
   width: 60px;
   text-align: center;
   margin-right: 10px;
@@ -87,7 +87,7 @@ p {
   height: 60px;
 }
 #img-navbar-menu {
-  margin: 2px 0 0 0;
+  margin: -5px 0 0 0;
   height:50px;
   width: auto;
 }
@@ -106,6 +106,9 @@ p {
   box-shadow: 0 0 2px #007aff, 0 3px 0 #007aff;
   color: #007aff;
 }
+// .show-navbar #menu {
+//   padding-top: 90px;
+// }
 .img-responsive.img-menu-logo {
   display: inline-block;
   max-width: 300px;
