@@ -13,11 +13,6 @@ p {
   max-width: 300px;
 }
 
-.img-golden {
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
 .gleam-max-width {
   width: 100%;
   max-width: 540px;
@@ -96,7 +91,12 @@ p {
   height:50px;
   width: auto;
 }
-.menu-link {
+.img-golden {
+  border-radius: 15px;
+  border: 10px solid white;
+}
+.menu-link,
+.golden-link {
   display: block;
   margin: 20px 0;
   padding: 20px 10px;
@@ -107,7 +107,13 @@ p {
   color: #007aff;
   background: #fff;
 }
-.menu-link:hover {
+.golden-link {
+  min-height: auto;
+  padding: 0;
+  margin-bottom: 0;
+}
+.menu-link:hover,
+.golden-link:hover {
   box-shadow: 0 0 2px #007aff, 0 3px 0 #007aff;
   color: #007aff;
 }
