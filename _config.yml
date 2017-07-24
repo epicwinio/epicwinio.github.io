@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: EPIC WIN!
+title: EPIC WIN! - Unicorn Fuel for Your Startup 🔥 
 email: chris@epicwin.io
 description: > # this means to ignore newlines until "baseurl:"
-  Win Epic Software Free-For-Life!
+  Win Epic Software to Start, Launch & Grow your Business Faster.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: epicwinio
