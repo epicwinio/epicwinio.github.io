@@ -215,6 +215,8 @@ p {
   letter-spacing: 1px;
   font-size: 36px;
   padding-top: 0.1em;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #text-description,
 #text-brand-description {
@@ -225,7 +227,7 @@ p {
   letter-spacing: 1px;
   min-height: 70px;
   line-height: 30px;
-  font-size: 21px;
+  font-size: 19px;
   opacity: 0.9;
   margin:0;
 }
@@ -241,7 +243,7 @@ p {
   margin:0;
   text-align: left;
 }
-@media (min-width: 622px) {
+@media (min-width: 599px) {
   #img-logo {
     top: 30px;
   }
