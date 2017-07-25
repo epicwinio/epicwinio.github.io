@@ -44,7 +44,14 @@ p {
 .show-navbar .col-navbar {
   background-color: #010002;
 }
-
+.col-description {
+  padding: 10px;
+  text-align: center;
+  background-color: #007aff;
+  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  letter-spacing: 1px;
+}
 #img-navbar-logo {
   display: none;
   height:70px;
@@ -131,7 +138,7 @@ p {
   background: #fff;
   border-top: 1px solid rgba(0,0,0,0.2);
   border-bottom: 2px solid rgba(0,0,0,0.4);
-  margin: 20px auto;
+  margin: 30px auto 20px auto;
   padding: 20px 10px;
   text-align: center;
 }
@@ -193,13 +200,18 @@ p {
   text-align: center;
   width: 100%;
   text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
-  color: #eee;
+  color: #fff;
   opacity: 0.9;
   font-weight: 700;
   font-family:'Bitter';
   letter-spacing: 1px;
   font-size: 36px;
   padding-top: 0.1em;
+}
+#text-description {
+  font-size: 21px;
+  opacity: 0.9;
+  margin:0;
 }
 @media (min-width: 622px) {
   #img-logo {
@@ -229,14 +241,17 @@ p {
   #text-tagline {
     font-size: 40px;
   }
+  #text-description {
+    font-size: 23px;
+  }
 }
 @media (min-width: 992px) {
   #video-background {
     min-width: 100%;
     margin-left: 0;
   }
-  #text-tagline {
-    font-size: 45px;
+  #text-description {
+    font-size: 26px;
   }
 }
 @media (min-width: 1200px) {  }
