@@ -45,19 +45,15 @@ p {
   background-color: #010002;
 }
 .col-description {
-  padding: 10px;
-  text-align: center;
   background-color: #007aff;
-  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
-  color: #fff;
-  letter-spacing: 1px;
+  text-align: center;
 }
 #img-navbar-logo {
   display: none;
-  height:70px;
+  height:60px;
   width: auto;
   float: left;
-  padding-right: 10px;
+  margin: 5px 10px;
 }
 .show-navbar #img-navbar-logo {
   display: block;
@@ -73,6 +69,8 @@ p {
   font-size: 36px;
   margin: 0;
   font-size: 36px;
+  padding-right: 15px;
+  background-color: #010002;
 }
 #text-brand:hover {
   color: #eee;
@@ -92,6 +90,16 @@ p {
   margin-right: 10px;
   margin: 5px;
   height: 60px;
+}
+.show-navbar #navbar-nav {
+  line-height: 70px;
+  background-color: #010002;
+  padding: 0 5px;
+  border-radius: 0;
+  width: 70px;
+  text-align: center;
+  height: 70px;
+  margin: 0;
 }
 #img-navbar-menu {
   margin: -5px 0 0 0;
@@ -208,10 +216,30 @@ p {
   font-size: 36px;
   padding-top: 0.1em;
 }
-#text-description {
+#text-description,
+#text-brand-description {
+  padding: 20px 10px;
+  text-align: center;
+  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  letter-spacing: 1px;
+  min-height: 70px;
+  line-height: 30px;
+  font-size: 20px;
+  opacity: 0.9;
+  margin:0;
+}
+#text-brand-description {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  display: none;
+  padding-left: 20px;
+  line-height: 50px;
   font-size: 21px;
   opacity: 0.9;
   margin:0;
+  text-align: left;
 }
 @media (min-width: 622px) {
   #img-logo {
@@ -220,6 +248,22 @@ p {
   #text-tagline {
     top: 255px;
      line-height: 1.5;
+  }
+}
+.show-after-850-inline {
+  display: none;
+}
+@media (min-width: 850px) {
+  .show-after-850-inline {
+    display: inline;
+  }
+}
+@media (min-width: 700px) {
+  .show-navbar #text-brand-description {
+    display: inline-block;
+  }
+  .show-navbar .col-navbar {
+    background-color: #007aff;
   }
 }
 
@@ -242,7 +286,7 @@ p {
     font-size: 40px;
   }
   #text-description {
-    font-size: 23px;
+    font-size: 22px;
   }
 }
 @media (min-width: 992px) {
