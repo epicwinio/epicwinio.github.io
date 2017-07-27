@@ -10,7 +10,8 @@ p {
   display: inline-block;
 }
 .img-responsive.img-logo {
-  max-width: 300px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .gleam-max-width {
@@ -148,16 +149,25 @@ p {
   margin-bottom: 15px;
 }
 .product-details {
-  padding-bottom: 20px;
   background: #fff;
-  border-top: 1px solid rgba(0,0,0,0.2);
-  border-bottom: 2px solid rgba(0,0,0,0.4);
-  margin: 30px auto 20px auto;
-  padding: 20px 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  margin: 0 auto 30px auto;
+  padding: 40px 10px 30px 10px;
   text-align: center;
 }
+
 .product-details h1 {
   margin-top: 0;
+}
+
+.product-header {
+  font-size: 30px;
+}
+
+.product-description {
+  font-size: 15px;
+  color: #777;
+  margin: 10px 20px 20px 20px;
 }
 // html body .coupon iframe.e-embed-frame {
 //   box-shadow: none;
@@ -226,14 +236,14 @@ p {
 }
 #text-description,
 #text-brand-description {
-  padding: 21px 10px 21px 10px;
+  padding: 18px 10px 19px 10px;
   text-align: center;
   text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
   color: #fff;
   letter-spacing: 1px;
   min-height: 70px;
-  line-height: 30px;
-  font-size: 18px;
+  line-height: 33px;
+  font-size: 22px;
   opacity: 0.9;
   margin:0;
 }
@@ -302,6 +312,13 @@ p {
     min-width: 150%;
     margin-left: -25%;
   }
+  .product-header {
+    font-size: 35px;
+  }
+  .product-description {
+    font-size: 17px;
+    margin: 12px 20px 22px 20px;
+  }
 }
 @media (min-width: 768px) {
   #video-background {
@@ -314,6 +331,13 @@ p {
   #text-description {
     font-size: 22px;
   }
+  .product-header {
+    font-size: 40px;
+  }
+  .product-description {
+    font-size: 20px;
+    margin: 15px 20px 25px 20px;
+  }
 }
 @media (min-width: 992px) {
   #video-background {
@@ -323,14 +347,35 @@ p {
   #text-description {
     font-size: 26px;
   }
+  .product-header {
+    font-size: 50px;
+  }
+  .product-description {
+    font-size: 25px;
+    margin: 20px 20px 30px 20px;
+  }
 }
 @media (min-width: 1200px) {  }
 
 /**
 *** Targeting a single segment of screen sizes using the minimum and maximum breakpoint widths.
 **/
-@media (max-width: 575px) {  }
-@media (min-width: 576px) and (max-width: 767px) {  }
+@media (max-width: 575px) {
+  .btn-group-lg>.btn, .btn-lg {
+    padding: 8px 13px;
+    font-size: 16px;
+    line-height: 1.2;
+    border-radius: 4px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .btn-group-lg>.btn, .btn-lg {
+    padding: 8px 13px;
+    font-size: 16px;
+    line-height: 1.2;
+    border-radius: 4px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {  }
 @media (min-width: 992px) and (max-width: 1199px) {  }
 @media (min-width: 1200px) {  }

@@ -6,9 +6,9 @@ layout: default
     <a href="{{ page.product_url_home }}" class="link-logo"><img
       src="/img/{{ page.slug }}.png" class="img-responsive img-logo" alt="{{ page.product_name | escape }}"></a>
   </h1>
-  <h2>{{ page.product_header | escape }}</h2>
-  <p>{{ page.product_description | escape }}</p>
-  <p class="btn-group">
+  <h2 class="product-header">{{ page.product_header | escape }}</h2>
+  <p class="product-description">{{ page.product_description | escape }}</p>
+  <p class="btn-group btn-group-lg">
     {% if page.product_url_home != empty %}
     <a href="{{ page.product_url_home }}" class="btn btn-default">Website</a>
     {% endif %}
