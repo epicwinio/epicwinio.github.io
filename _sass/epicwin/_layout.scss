@@ -193,6 +193,19 @@ p {
 .nowrap {
   white-space: nowrap;
 }
+.btn-primary {
+  color: #fff;
+  background-color: #007aff;
+  border-color: #007aff;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #007aff;
+  border-color: #007aff;
+  opacity: 0.8;
+}
 #img-logo {
   margin: 0 auto;
   position: absolute;

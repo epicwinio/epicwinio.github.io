@@ -10,14 +10,16 @@ layout: default
   <p class="product-description">{{ page.product_description | escape }}</p>
   <p class="btn-group btn-group-lg">
     {% if page.product_url_home != empty %}
-    <a href="{{ page.product_url_home }}" class="btn btn-default">Website</a>
+    <a href="{{ page.product_url_home }}" class="btn btn-primary">Go To Website</a>
     {% endif %}
+    <!--
     {% if page.product_url_pricing != empty %}
     <a href="{{ page.product_url_pricing }}" class="btn btn-default">Pricing</a>
     {% endif %}
     {% if page.product_url_freetrial != empty %}
     <a href="{{ page.product_url_freetrial }}" class="btn btn-default">Free Trial</a>
     {% endif %}
+    -->
   </p>
   {% if page.gleam_coupon_url != empty %}
   <div class="coupon">
@@ -28,7 +30,7 @@ layout: default
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-md-offset-3 col-md-6 col-win">
+    <div class="col-win">
       {% if page.gleam_competition_url != empty %}
       <p><a class="e-widget no-button" href="{{ page.gleam_competition_url }}" rel="nofollow">{{ page.gleam_competition_text | escape }}</a></p>
       {% endif %}
