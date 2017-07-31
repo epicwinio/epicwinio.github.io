@@ -10,7 +10,7 @@ layout: default
   <p class="product-description">{{ page.product_description | escape }}</p>
   <p class="btn-group btn-group-lg">
     {% if page.product_url_home != empty %}
-    <a href="/go?url={{ page.product_url_home }}" class="btn btn-primary">Go To Website</a>
+    <a href="/go/?url={{ page.product_url_home }}" class="btn btn-primary">Go To Website</a>
     {% endif %}
     <!--
     {% if page.product_url_pricing != empty %}
