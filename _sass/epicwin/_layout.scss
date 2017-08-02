@@ -70,7 +70,7 @@ p {
   font-size: 30px;
   margin: 0;
   padding-right: 0;
-  background-color: red;
+  background-color: #010002;
 }
 #text-brand:hover {
   color: #eee;
@@ -84,6 +84,8 @@ p {
     font-size: 36px;
   }
 }
+
+
 
 #navbar-nav {
   display: inline-block;
@@ -101,12 +103,18 @@ p {
 .show-navbar #navbar-nav {
   line-height: 70px;
   background-color: #010002;
-  padding: 0 5px;
+  padding: 0;
   border-radius: 0;
-  width: 70px;
+  width: 50px;
   text-align: center;
   height: 70px;
   margin: 0;
+}
+@media (min-width: 340px) {
+  .show-navbar #navbar-nav {
+    width: 70px;
+    padding: 0 5px;
+  }
 }
 #img-navbar-menu {
   margin: -5px 0 0 0;
