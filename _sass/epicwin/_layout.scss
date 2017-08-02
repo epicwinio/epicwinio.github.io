@@ -69,7 +69,7 @@ p {
   letter-spacing: 1px;
   font-size: 30px;
   margin: 0;
-  padding-right: 15px;
+  padding-right: 0;
   background-color: #010002;
 }
 #text-brand:hover {
@@ -309,6 +309,9 @@ p {
 @media (min-width: 700px) {
   .show-navbar #text-brand-description {
     display: inline-block;
+  }
+  #text-brand {
+    padding-right: 15px;
   }
   .show-navbar .col-navbar {
     background-color: #007aff;
