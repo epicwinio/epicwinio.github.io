@@ -12,6 +12,10 @@ layout: blank
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Loading...</title>
 
+    {% include inlinejs.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/assets/main.js"></script>
+
     {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
     {% endif %}
@@ -27,7 +31,46 @@ layout: blank
         }
         return(false);
       }
+
+      function url_domain(data) {
+        var a = document.createElement('a');
+        a.href = data;
+        return a.hostname;
+      }
+
       var url = getQueryVariable('url') || '/';
+      var redirect_hostname = url_domain(url);
+      var affiliate_key;
+      var affiliate_value;
+      var matched_company;
+
+      // lookup affiliate key and affiliate default value
+      for (var company in EPIC.companies) {
+        if (EPIC.companies.hasOwnProperty(company) && EPIC.companies[company]['url']) {
+          var company_hostname = url_domain(EPIC.companies[company]['url']);
+          if(redirect_hostname === company_hostname) {
+            matched_company = EPIC.companies[company];
+            affiliate_key = EPIC.companies[company]['affiliate_key'];
+            affiliate_value = EPIC.companies[company]['affiliate_default']; // use our affiliate value
+            break;
+          }
+        }
+      }
+
+      // if a company was matched then look for a bounty
+      if(matched_company){
+        var bounty = EPIC.bounty.load(matched_company['slug']);
+        if(bounty) {
+          affiliate_value = bounty['affiliate_value']; // overriding our default
+        }
+      }
+
+      // append affiliate params to the url
+      if(affiliate_key && affiliate_value) {
+        url += url.indexOf("?") === -1 ? "?" : "&";
+        url += affiliate_key + '=' + affiliate_value;
+      }
+
       window.location = url;
     </script>
   </head>

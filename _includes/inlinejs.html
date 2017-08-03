@@ -1,0 +1,16 @@
+    <script>
+      window.EPIC = window.EPIC || {};
+      EPIC.companies = {
+        {% for post in site.posts %}
+          '{{ post.slug }}' : {
+            slug : '{{ post.slug }}',
+            name : '{{ post.product_name | escape }}',
+            url : '{{ post.product_url_home }}',
+            affiliate_key : '{{ post.affiliate_key }}',
+            affiliate_default : '{{ post.affiliate_default }}'
+          },
+        {% endfor %}
+          'removeme': {}
+      }
+      delete EPIC.companies.removeme;
+    </script>
