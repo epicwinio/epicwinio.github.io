@@ -1,17 +1,19 @@
-<div id="goldenticket" class="col-golden">
-  <div id="golden" class="gleam-max-width">
-    <a class="golden-link" href="/giveaway">
-      <img src="/img/giveaway.png" class="img-responsive img-golden" alt="EPIC WIN! Golden Ticket - 10x Your Chances of Winning! A Free Pass to the Judges Shortlist">
-    </a>
+<div id="menu">
+  <div id="goldenticket" class="col-golden">
+    <div id="golden" class="gleam-max-width">
+      <a class="golden-link" href="/giveaway">
+        <img src="/img/giveaway.png" class="img-responsive img-golden" alt="EPIC WIN! Golden Ticket - 10x Your Chances of Winning! A Free Pass to the Judges Shortlist">
+      </a>
+    </div>
   </div>
-</div>
 
-<div id="{{ page.slug }}" class="col-win">
-  <div id="menu" class="gleam-max-width">
-    {% for post in site.posts %}
-      <a class="menu-link" href="{{ post.url | relative_url }}">
-        <img
-        src="/img/{{ post.slug }}.png" class="img-responsive img-menu-logo" alt="{{ post.product_name | escape }}"><br />{{ post.product_header | escape }}</a>
-    {% endfor %}
+  <div class="col-win">
+    <div class="gleam-max-width">
+      {% for post in site.posts %}
+        <a class="menu-link" href="{{ post.url | relative_url }}">
+          <img
+          src="/img/{{ post.slug }}.png" class="img-responsive img-menu-logo" alt="{{ post.product_name | escape }}"><br />{{ post.product_header | escape }}</a>
+      {% endfor %}
+    </div>
   </div>
 </div>

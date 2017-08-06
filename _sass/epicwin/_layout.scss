@@ -116,6 +116,9 @@ p {
     padding: 0 5px;
   }
 }
+#menu {
+  padding-top: 70px;
+}
 #img-navbar-menu {
   margin: -5px 0 0 0;
   height:50px;
@@ -159,13 +162,14 @@ p {
 .product-details {
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-  margin: 0 auto 30px auto;
-  padding: 40px 10px 30px 10px;
+  margin: 0 auto 60px auto;
+  padding: 60px 10px 30px 10px;
   text-align: center;
 }
 
 .product-details h1 {
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .product-header {
