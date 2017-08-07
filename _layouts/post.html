@@ -8,11 +8,13 @@ layout: default
   </h1>
   <h2 class="product-header">{{ page.product_header | escape }}</h2>
   <p class="product-description">{{ page.product_description | escape }}</p>
-  <p class="btn-group btn-group-lg">
+  <div id="cta-buttons">
     {% if page.product_url_home != empty %}
-    <a href="/go/?url={{ page.product_url_home }}" class="btn btn-primary" target="_blank">Go To Website</a>
+    <a href="/go/?url={{ page.product_url_home }}" class="btn btn-lg btn-primary" target="_blank">Go to Website</a>
     {% endif %}
-    <!--
+    <a href="https://www.google.com/search?q=coupon+{{ page.slug }}" class="btn btn-lg btn-primary btn-coupon" target="_blank">Best Coupon</a>
+  </div>
+  <!--
     {% if page.product_url_pricing != empty %}
     <a href="{{ page.product_url_pricing }}" class="btn btn-default">Pricing</a>
     {% endif %}
@@ -20,7 +22,6 @@ layout: default
     <a href="{{ page.product_url_freetrial }}" class="btn btn-default">Free Trial</a>
     {% endif %}
     -->
-  </p>
   {% if page.gleam_coupon_url != empty %}
   <div class="coupon">
     <a class="coupon-link" href="page.gleam_coupon_url" target="_blank">{{ page.gleam_coupon_text | escape }}</a>

@@ -116,6 +116,35 @@ p {
     padding: 0 5px;
   }
 }
+#cta-buttons {}
+#cta-buttons .btn {
+  display: block;
+  margin-top: 10px;
+}
+#cta-buttons .btn-coupon {
+  background-color: #fff;
+  color: #007aff;
+  border: 2px dashed #007aff;
+}
+@media (min-width: 350px) {
+  #cta-buttons .btn {
+    display: inline-block;
+    margin-top: 0;
+    min-width: 150px;
+  }
+  #cta-buttons .btn-coupon {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 450px) {
+  #cta-buttons .btn {
+    min-width: 180px;
+  }
+  #cta-buttons .btn-coupon {
+    margin-left: 20px;
+  }
+}
+
 #menu {
   padding-top: 70px;
 }
@@ -161,10 +190,16 @@ p {
 }
 .product-details {
   background: #fff;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-  margin: 0 auto 60px auto;
-  padding: 60px 10px 30px 10px;
+  margin: 0 auto 0 auto;
+  padding: 60px 10px 60px 10px;
   text-align: center;
+}
+@media (min-width: 540px) {
+  .product-details {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 0 auto 50px auto;
+    padding: 60px 10px 40px 10px;
+  }
 }
 
 .product-details h1 {
