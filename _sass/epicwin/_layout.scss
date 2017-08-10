@@ -216,6 +216,26 @@ p {
   color: #777;
   margin: 10px 20px 20px 20px;
 }
+
+.post-details {
+  background: #fff;
+  margin: 0 auto 0 auto;
+  padding: 20px 10px 40px 10px;
+  text-align: center;
+}
+@media (min-width: 540px) {
+  .post-details {
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 50px auto 0 auto;
+    padding: 40px 10px 40px 10px;
+  }
+}
+
+html body .e-widget-preloader,
+html body iframe.e-embed-frame {
+  margin-bottom: 0 !important;
+}
 // html body .coupon iframe.e-embed-frame {
 //   box-shadow: none;
 //   border: 2px dashed #ccc;
