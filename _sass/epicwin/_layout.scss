@@ -234,6 +234,10 @@ p {
   }
 }
 
+.e-widget.no-button {
+  display: none;
+}
+
 html body .e-widget-preloader,
 html body iframe.e-embed-frame {
   margin-bottom: 0 !important;
