@@ -1,5 +1,8 @@
 html, body {
-  background: #f6f6f6;
+  background: #fff;
+}
+.e-embed-frame {
+  box-shadow: none !important;
 }
 
 td, th {
@@ -25,6 +28,7 @@ p {
 }
 
 .col-win {
+  padding: 10px 0;
   text-align: center;
 }
 .col-intro {
@@ -194,16 +198,10 @@ p {
 }
 .product-details {
   background: #fff;
-  margin: 0 auto 0 auto;
-  padding: 60px 10px 60px 10px;
+  margin: 35px auto 0 auto;
+  padding: 40px 10px 60px 10px;
   text-align: center;
-}
-@media (min-width: 540px) {
-  .product-details {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-    margin: 0 auto 50px auto;
-    padding: 60px 10px 40px 10px;
-  }
+  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2);
 }
 
 .product-details h1 {
@@ -229,8 +227,8 @@ p {
 }
 @media (min-width: 540px) {
   .post-details {
-    border-top: 2px solid rgba(0, 0, 0, 0.4);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    // border-top: 2px solid rgba(0, 0, 0, 0.4);
+    // border-bottom: 2px solid rgba(0, 0, 0, 0.4);
     margin: 50px auto 0 auto;
     padding: 40px 10px 40px 10px;
   }

@@ -1,6 +1,16 @@
 ---
 layout: default
 ---
+
+<div class="container">
+  <div class="row">
+    <div class="col-win">
+      {% if page.gleam_competition_url != empty %}
+      <a class="e-widget no-button" href="{{ page.gleam_competition_url }}" rel="nofollow">{{ page.gleam_competition_text | escape }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
 <div class="product-details">
   <h1>
     <a href="{{ page.product_url_home }}" class="link-logo"><img
@@ -28,15 +38,6 @@ layout: default
     <!-- <p><a class="e-widget no-button" href="{{ page.gleam_coupon_url }}" rel="nofollow">{{ page.gleam_coupon_text | escape }}</a></p> -->
   </div>
   {% endif %}
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-win">
-      {% if page.gleam_competition_url != empty %}
-      <a class="e-widget no-button" href="{{ page.gleam_competition_url }}" rel="nofollow">{{ page.gleam_competition_text | escape }}</a>
-      {% endif %}
-    </div>
-  </div>
 </div>
 <div class="post-details">
   <div id="terms" class="gleam-max-width" style="text-align:left;">
