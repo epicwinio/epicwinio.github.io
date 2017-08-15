@@ -39,33 +39,39 @@ layout: default
   </div>
 </div>
 <div class="post-details">
-  <div class="gleam-max-width" style="text-align:left;">
+  <div id="terms" class="gleam-max-width" style="text-align:left;">
+    <h1 style="color:red;">This competition is Under Development. It is not a real competition. Do not enter. There is no prize.</h1>
     <h1>Trade Promotion: Game of Skill</h1>
     <h2>Schedule to Conditions of Entry</h2>
     <table border="1" cellpadding="10" style="text-align: left;"><tbody>
-      <tr><th>Promotion Name</th><td>'I Want Shopify FREE for a YEAR!'</td></tr>
+      <tr><th width="100px">Promotion Name</th><td>'{{ page.gleam_competition_text | escape  }}'</td></tr>
       <tr><th>Promotion Type</th><td>Consumer Promotion</td></tr>
-      <tr><th>Promoter</th><td>Code Hunt Pty Ltd ABN: XXXXX<br/>10 Habitat Drive, Moonee Beach, NSW 2450 Australia</td></tr>
-      <tr><th>Relevant State(s)</th><td>All Australian States and Territories </td></tr>
-      <tr><th>Entry Restrictions</th><td>Entry is open to all Australian residents aged 18 years or older.</td></tr>
+      <tr><th>Promoter</th><td>CODE HUNT PTY. LTD. ABN: 79603672055
+        <br/>10 Habitat Drive, Moonee Beach, NSW 2450 Australia.</td></tr>
+      <tr><th>Relevant Contries</th><td>Australia.</td></tr>
+      <tr><th>Relevant States</th><td>All Australian States and Territories.</td></tr>
+      <tr><th>Entry Restrictions</th><td>Entry is open to {{ page.product_name | escape }} customers, and people that are not {{ page.product_name | escape }} customers.
+        <br>Entry is open to all Australian residents aged 18 years or older.</td></tr>
       <tr><th>Promotion Period</th><td>
-        The Promotion Period starts at XX.XXpm AEDST on Monday XXXXX XXXXX 2017.
-        <br>The Promotion closes at 11.59pm AEDST on Sunday XXXXX XXXXX 2017.
+        The Promotion Period starts at {{ page.gleam_starts | escape }} UTC (GMT+00:00).
+        <br>The Promotion closes at {{ page.gleam_ends | escape }} UTC (GMT+00:00).
         <br>No entries will be accepted after this time. </td></tr>
       <tr><th>Verification Requirements</th><td>
-        Entrants must be able to prove that the content they submit is their own original, authentic work and that they are the rightful owner of the Block of land.
-        <br/>It is a condition of entry that all prize winners agree for their names to be published on (but not limited to) the EPIC WIN website, in the EPIC WIN newsletter and on EPIC WIN's Social media channels.
+        Entrants must be able to prove that the content they submit is their own original work.
+        <br/>It is a condition of entry that all prize winners agree for their names to be published on (but not limited to) the EPIC WIN website, in the EPIC WIN newsletter and on EPIC WIN social media channels.
       </td></tr>
       <tr><th>Entry Procedure</th><td>
         To enter, entrants must during the Promotion Period:
         <ol start="1">
-          <li>Visit the ‘I Want Shopify FREE for a YEAR!’ page (https://epicwin.io/shopify) on the EPIC WIN website;</li>
-          <li>Input the requested details, including their contact details;</li>
-          <li>Answer the question “In 10 words or less "sell" Shopify” in 10 words or less; and</li>
-          <li>Then, submit the fully completed online entry form.</li>
+          <li>Visit the ‘{{ page.gleam_competition_text | escape  }}’ page (https://epicwin.io/{{ page.slug }}) on the EPIC WIN website;</li>
+          <li>Login with Email, Facebook, Twitter or Youtube; or input their Full Name and Email when requested;</li>
+          <li>Complete the required Action, "STEP 1: Click Here" by clicking on a button to visit the {{ page.product_name | escape }} website;</li>
+          <li>Complete the required Action, "STEP 2: The Challenge!" by writing a response to the challenge question: '{{ page.gleam_question | escape }}';</li>
+          <li>Once the above steps are completed and submitted the entrant has 1 (one) Primary Entry into the competition, and 3 (three); and</li>
+          <li>Then the entrant can complete additional actions to gain Bonus Entries.</li>
         </ol>
       </td></tr>
-      <tr><th>Maximum Number of Entries</th><td>Only one (1) entry is permitted per person per household.</td></tr>
+      <tr><th>Maximum Number of Entries</th><td>Only one (1) Primary Entry is permitted per person (i.e. entrants may only complete the required actions "STEP 1: Click Here" and "STEP 2: The Challenge!" 1 (one) time). After completing the Entry Procedure to get a Primary Entry into the competition, an entrant may complete additional actions to obtain an unlimited number of Entries.</td></tr>
       <tr><th>Judging Criteria</th><td>This is a game of skill and chance plays no part in determining the winner. Each entry will be individually judged based on literary and creative merit of the answer provided to the promotional question.</td></tr>
       <tr><th>Judging Details</th><td>
         <strong>The prize winner will be judged:</strong>
