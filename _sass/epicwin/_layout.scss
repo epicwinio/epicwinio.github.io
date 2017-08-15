@@ -28,7 +28,7 @@ p {
 }
 
 .col-win {
-  padding: 10px 0;
+  padding: 0;
   text-align: center;
 }
 .col-intro {
@@ -198,10 +198,10 @@ p {
 }
 .product-details {
   background: #fff;
-  margin: 35px auto 0 auto;
-  padding: 40px 10px 60px 10px;
+  margin: 10px auto 0 auto;
+  padding: 40px 10px 40px 10px;
   text-align: center;
-  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2);
+  //box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2);
 }
 
 .product-details h1 {
