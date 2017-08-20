@@ -327,7 +327,7 @@ html body iframe.e-embed-frame {
   text-align: center;
   // text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
   color: #fff;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   min-height: 70px;
   line-height: 46px;
   font-size: 28px;
@@ -418,9 +418,9 @@ html body iframe.e-embed-frame {
   // #text-tagline {
   //   font-size: 70px;
   // }
-  // #text-description {
-  //   font-size: 24px;
-  // }
+  #text-description {
+    letter-spacing: 3px;
+  }
   .product-header {
     font-size: 40px;
   }
