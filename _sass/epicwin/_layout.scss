@@ -327,10 +327,10 @@ html body iframe.e-embed-frame {
   text-align: center;
   // text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
   color: #fff;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   min-height: 70px;
-  line-height: 33px;
-  font-size: 24px;
+  line-height: 46px;
+  font-size: 28px;
   opacity: 1;
   margin:0;
 }
@@ -339,6 +339,7 @@ html body iframe.e-embed-frame {
   top: 0;
   padding: 10px;
   display: none;
+  letter-spacing: 2px;
   padding-left: 20px;
   line-height: 50px;
   font-size: 21px;
@@ -433,9 +434,9 @@ html body iframe.e-embed-frame {
     min-width: 100%;
     margin-left: 0;
   }
-  #text-description {
-    font-size: 26px;
-  }
+  // #text-description {
+  //   font-size: 26px;
+  // }
   .product-header {
     font-size: 50px;
   }
