@@ -17,7 +17,20 @@ gleam_competition_text: "EPIC WIN Golden Ticket (Giveaway)"
 gleam_question:         "In 10 words or less \"sell\" EPIC WIN"
 gleam_starts:           "2017-07-27 12:00:00 AM"
 gleam_ends:             "2017-09-30 11:59:59 PM"
-prize:                  ""
+restrictions:           > # this means to ignore newlines until "prize:"
+                        Entry is open to:<br>
+                        <ol start="1">
+                          <li>All Australian residents aged 18 years or older.</li>
+                        </ol>
+                        Entry is not open to:<br>
+                        <ol start="1">
+                          <li>Previous EPIC WIN Golden Ticket (Giveaway) winners.</li>
+                        </ol>
+prize:                  > # this means to ignore newlines until "prizepool:"
+                        There will be only one (1) winner.
+                        <br><br>The winner will be awarded one (1) EPIC WIN Golden Ticket.
+                        <br><br>An EPIC WIN Golden Ticket is a lifetime Free Pass from the "Top 1000 Entrants" list into the "Judges Shortlist" for any EPIC WIN competition (unless the Conditions of Entry for a competition explicitly exclude EPIC WIN Golden Tickets).
+                        <br><br>Getting a Free Pass from the "Top 1000 Entrants" list into the "Judges Shortlist" (approximately 100 entrants) gives Golden Ticket holders up to a 10x better chance of winning by skipping the first round of judging.
 prizepool:              "Up to the value of $0 AUD."
 affiliate_key:          "ref"
 affiliate_default:      "epicwinio"
