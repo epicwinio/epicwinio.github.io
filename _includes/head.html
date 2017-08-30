@@ -19,16 +19,16 @@
     <meta name="twitter:image:src" content="https://epicwin.io/img/twitter-{% if page.image %}{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}"><!-- 1024-512 -->
     <!-- <meta name="twitter:player" content="https://www.youtube.com/embed/QSmmp9nHUm"> -->
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta name="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}">
-    <meta name="og:image" content="https://epicwin.io/img/{% if page.image %}{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}"><!-- 1200-630 -->
-    <meta name="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
-    <meta name="og:site_name" content="EPIC WIN">
-    <meta name="og:locale" content="en_US">
+    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}">
+    <meta property="og:image" content="https://epicwin.io/img/{% if page.image %}{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}"><!-- 1200-630 -->
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <meta property="og:site_name" content="EPIC WIN">
+    <meta property="og:locale" content="en_US">
     <!-- <meta name="og:video" content="https://example.com/video.avi"> -->
-    <meta name="fb:admins" content="1114692106">
-    <meta name="fb:app_id" content="1837792482912447">
-    <meta name="og:type" content="website">
+    <meta property="fb:admins" content="1114692106">
+    <meta property="fb:app_id" content="1837792482912447">
+    <meta property="og:type" content="website">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
