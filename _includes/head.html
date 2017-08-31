@@ -4,23 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}">
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="image" content="https://epicwin.io/img/{% if page.image %}{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}">
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta itemprop="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}">
+    <meta itemprop="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta itemprop="image" content="https://epicwin.io/img/{% if page.image %}{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}">
+    <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="twitter:site" content="@epicwinio">
     <meta name="twitter:creator" content="@epicwinio">
     <meta name="twitter:image:src" content="https://epicwin.io/img/twitter-{% if page.image %}{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}"><!-- 1024-512 -->
     <!-- <meta name="twitter:player" content="https://www.youtube.com/embed/QSmmp9nHUm"> -->
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}">
+    <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta property="og:image" content="https://epicwin.io/img/{% if page.image %}{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}"><!-- 1200-630 -->
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
     <meta property="og:site_name" content="EPIC WIN">
