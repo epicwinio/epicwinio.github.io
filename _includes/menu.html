@@ -4,7 +4,7 @@
   <div id="goldenticket" class="col-golden">
     <div id="golden" class="gleam-max-width">
       <a class="golden-link" href="/gold">
-        <img src="/img/gold.png" class="img-responsive img-golden" alt="EPIC WIN! Golden Ticket - 10x Your Chances of Winning! A Free Pass to the Judges Shortlist">
+        <img src="/img/gold.jpg" class="img-responsive img-golden" alt="EPIC WIN Golden Ticket - 10x Your Chances of Winning! A Free Pass to the Judges Shortlist">
       </a>
     </div>
   </div>
@@ -14,7 +14,7 @@
       {% for post in site.posts %}
         <a class="menu-link" href="{{ post.url | relative_url }}">
           <img
-          src="/img/{{ post.slug }}.png" class="img-responsive img-menu-logo" alt="{{ post.product_name | escape }}"><br />{{ post.product_header | escape }}</a>
+          src="/img/{{ post.product_image }}" class="img-responsive img-menu-logo" alt="{{ post.product_name | escape }}"><br />{{ post.product_header | escape }}</a>
       {% endfor %}
     </div>
   </div>
